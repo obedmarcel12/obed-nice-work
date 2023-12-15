@@ -660,6 +660,30 @@ video {
   bottom: 57vw;
 }
 
+.bottom-\[2vw\] {
+  bottom: 2vw;
+}
+
+.bottom-\[22vw\] {
+  bottom: 22vw;
+}
+
+.bottom-\[vw\] {
+  bottom: vw;
+}
+
+.bottom-\[80vw\] {
+  bottom: 80vw;
+}
+
+.right-\[15vw\] {
+  right: 15vw;
+}
+
+.bottom-\[90vw\] {
+  bottom: 90vw;
+}
+
 .flex {
   display: flex;
 }
@@ -888,6 +912,14 @@ video {
   width: 40vw;
 }
 
+.w-\[22vw\] {
+  width: 22vw;
+}
+
+.w-\[4vw\] {
+  width: 4vw;
+}
+
 .-rotate-12 {
   --tw-rotate: -12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1008,6 +1040,14 @@ video {
 
 .gap-\[20vh\] {
   gap: 20vh;
+}
+
+.gap-\[40vh\] {
+  gap: 40vh;
+}
+
+.gap-\[30vh\] {
+  gap: 30vh;
 }
 
 .rounded-\[10\%\] {
