@@ -6,32 +6,67 @@
     <title>Document</title>
     <link rel="stylesheet" href="./dist/output.css" />
     <link
+      rel="stylesheet"
+      href=" https://unpkg.com/ionicons@7.1.0/dist/ionicons/svg/close.svg"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="sm: w-[100%] sm: h-[10vh]   md:w-[100%] md:h-[10vh] shadow-2xl">
-      <div class="sm: w-[100%] sm: h-[10vh] sm: flex sm: justify-around       md:w-[100%] md:h-[10vh] md:justify-around md:flex items-center">
-        <div class="flex items-center">
+    <header
+      class="sm: w-[100%] sm: h-[40vh] md:w-[100%] md:h-[10vh] shadow-2xl"
+    >
+      <div
+        class="flex sm: justify-between sm: items-start md:justify-around md:items-center sm: w-[100%] sm: h-[40vh] sm: text-[white] sm: p-7 sm: bg-cyan-500 md:bg-white md:w-[100%] md:text-[black] sm: gap-5 md:gap-0 md:h-[10vh] md:p-0"
+      >
+        <div class="flex md:items-start">
           <span
-            class="text-[white] sm: font-medium md:text-[4vh] sm: text-[2vh] font-serif md:font-extrabold border-[1px] border-[lawngreen] bg-[#44cf44] sm: w-[6vw] sm: h-[4vh]  md:w-[3vw] md:h-[5vh] rounded-[20%] flex items-center justify-center "
+            class="text-[white] sm: font-extrabold md:text-[4vh] sm: text-[3vh] font-serif md:font-extrabold border-[1px] border-[lawngreen] bg-[#44cf44] sm: w-[6vw] sm: h-[4vh] md:w-[3vw] md:h-[5vh] rounded-[20%] flex items-center justify-center"
             >S</span
           >
-          <h1 class="md:font-semibold">Ushi</h1>
+          <h1 class="md:font-semibold sm: font-extrabold">Ushi</h1>
         </div>
 
-        <div
-          class="flex items-center justify-between sm: w-[50vw] md:text-[3vh] sm: text-[1vh]  md:w-[30vw] font-sans md:font-semibold"
+        <span
+          class="text-4xl cursor-pointer md:hidden block absolute left-[80vw]"
         >
-          <h1 class="text-[#44cf44]">food</h1>
-          <h1>crumps</h1>
-          <h1>crunchie<span class="text-[#44cf44]">s</span></h1>
-          <h1>fried chicken</h1>
-          <h1>hom<span class="text-[#44cf44]">DEL</span></h1>
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+
+        <div class="flex items-center justify-between font-sans md:font-bold">
+          <ul
+            class="md:z-auto md:static w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 absolute md:text-[black] md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 sm: gap-3 md:gap-5 md:text-[2.5vh] md:flex md:items-center md:justify-between sm:font-serif sm: font-extrabold"
+          >
+            <li
+              href="#"
+              class="md:text-[#44cf44] hover:text-slate-950 duration-500"
+            >
+              food
+            </li>
+            <li href="#" class="hover:text-slate-950 duration-500">crumps</li>
+            <li href="#" class="hover:text-slate-950 duration-500">
+              crunchie<span class="">s</span>
+            </li>
+            <li href="#" class="hover:text-slate-950 duration-500">
+              fried chicken
+            </li>
+            <li href="#" class="hover:text-slate-950 duration-500">
+              hom<span class="">DEL</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="flex gap-4 items-center">
+        <div class="sm:flex hidden gap-4 items-center">
           <div class="md:h-[9vh] flex items-end">
             <i class="bx bx-bell"></i>
           </div>
@@ -73,7 +108,7 @@
 
           <div class="flex items-center pt-3 gap-3">
             <div
-              class="md:w-[10vw]  md:h-[6vh]  sm: w-[45vw] sm: h-[6vh] font-normal md:text-[3vh] text-[white] font-serif flex items-center justify-center bg-[#44cf44] rounded-[20px]"
+              class="md:w-[10vw] md:h-[6vh] sm: w-[45vw] sm: h-[6vh] font-normal md:text-[3vh] text-[white] font-serif flex items-center justify-center bg-[#44cf44] rounded-[20px]"
             >
               <input
                 type="button"
@@ -86,7 +121,7 @@
               <h1 class="font-medium md:text-[3vh]">Watch video</h1>
 
               <div
-                class="border-[1px] border-[#c0bebe] bg-[#fafafa] shadow-2xl rounded-[50%] flex items-center justify-center md:w-[3vw] md:h-[3vw] "
+                class="border-[1px] border-[#c0bebe] bg-[#fafafa] shadow-2xl rounded-[50%] flex items-center justify-center md:w-[3vw] md:h-[3vw]"
               >
                 <i class="bx bx-play"></i>
               </div>
@@ -131,7 +166,7 @@
             </div>
           </div>
 
-          <div class="absolute md:bottom-[11vw]  rotate-12">
+          <div class="absolute md:bottom-[11vw] rotate-12">
             <div>
               <img
                 src="src/images__16_-removebg-preview.png"
@@ -141,7 +176,9 @@
             </div>
           </div>
 
-          <div class="md:absolute md:bottom-[27vw] sm: absolute sm: bottom-[80vw] sm: right-[15vw]   md:right-[35vw]">
+          <div
+            class="md:absolute md:bottom-[27vw] sm: absolute sm: bottom-[20vw] sm: right-[15vw] md:right-[35vw]"
+          >
             <div
               class="text-[red] font-sans text-[2.5vh] flex items-center font-medium rounded-tr-sm bg-whitesmoke shadow-xl md:w-[11vw] pl-2 md:h-[5.2vh]"
             >
@@ -158,7 +195,9 @@
       <div class="sm: w-[82%] md:w-[82%]">
         <div class="text-center">
           <h1 class="text-[red] font-sans font-medium">customers favourites</h1>
-          <p class="md:font-bold md:text-[4vh] md:h-[10vh] sm: h-[7vh] font-sans">
+          <p
+            class="md:font-bold md:text-[4vh] md:h-[10vh] sm: h-[7vh] font-sans"
+          >
             popular Categories
           </p>
         </div>
@@ -746,5 +785,19 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
   </body>
 </html>
