@@ -24,28 +24,33 @@
   </head>
   <body>
     <header
-      class="sm: w-[100%] sm: h-[30vh] md:w-[100%] md:h-[10vh] shadow-2xl"
+      class="sm: w-[100%] sm: h-[10vh] md:w-[100%] md:h-[10vh] shadow-2xl"
     >
       <div
-        class="flex sm: justify-between sm: items-start md:justify-around md:items-center sm: w-[100%] sm: h-[30vh] sm: text-[white] sm: p-5 sm: bg-cyan-500 md:bg-white md:w-[100%] md:text-[black] sm: gap-2 md:gap-0 md:h-[10vh] md:p-0"
+        class="flex sm: justify-between sm: items-start md:justify-around md:items-center sm: w-[100%] sm: h-[10vh] sm: text-[white] sm: bg-cyan-500 sm: p-5 md:bg-white md:w-[100%] md:text-[black] sm: gap-2 md:gap-0 md:h-[10vh] md:p-0"
       >
-        <div class="flex md:items-start">
-          <span
-            class="text-[white] sm: font-extrabold md:text-[4vh] sm: text-[3vh] font-serif md:font-extrabold border-[1px] border-[lawngreen] bg-[#44cf44] sm: w-[6vw] sm: h-[4vh] md:w-[3vw] md:h-[5vh] rounded-[20%] flex items-center justify-center"
-            >S</span
-          >
-          <h1 class="md:font-semibold sm: font-extrabold">Ushi</h1>
-        </div>
-
-        <span
-          class="text-4xl cursor-pointer md:hidden block absolute left-[80vw]"
+        <nav
+          class="sm: bg-cyan-500 md:bg-white flex items-center justify-between"
         >
-          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-        </span>
+          <div class="flex md:items-start">
+            <span
+              class="text-[white] sm: font-extrabold md:text-[4vh] sm: text-[3vh] font-serif md:font-extrabold border-[1px] border-[lawngreen] bg-[#44cf44] sm: w-[6vw] sm: h-[4vh] md:w-[3vw] md:h-[5vh] rounded-[20%] flex items-center justify-center"
+              >S</span
+            >
+
+            <h1 class="md:font-semibold sm: font-extrabold">Ushi</h1>
+          </div>
+
+          <span
+            class="text-4xl cursor-pointer md:hidden block absolute left-[80vw]"
+          >
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </nav>
 
         <div class="flex items-center justify-between font-sans md:font-bold">
           <ul
-            class="md:z-auto md:static w-full left-0 md:w-auto md:py-0 py-0 md:pl-0 pl-7 absolute md:text-[black] md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 sm: gap-1 md:gap-5 md:text-[2.5vh] md:flex md:items-center md:justify-between sm:font-serif sm: font-extrabold"
+            class="md:z-auto md:static sm: text-black w-full left-0 md:w-auto md:py-0 py-0  md:pl-0 pl-7 absolute md:text-[black] md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 sm: gap-3 md:gap-5 md:text-[2.5vh] md:flex md:items-center md:justify-between sm: font-serif sm: font-extrabold"
           >
             <li
               href="#"
@@ -86,7 +91,7 @@
       </div>
     </header>
 
-    <div class="md:h-[22vh] sm: h-[10vh]"></div>
+    <div class="md:h-[22vh] sm: h-[25vh]"></div>
 
     <div class="flex justify-center items-center md:w-[100%]">
       <div
@@ -177,7 +182,7 @@
           </div>
 
           <div
-            class="md:absolute md:bottom-[27vw] sm: absolute sm: bottom-[20vw] sm: right-[15vw] md:right-[35vw]"
+            class="md:absolute md:bottom-[27vw] sm: absolute sm: bottom-[50vw] sm: right-[15vw] md:right-[35vw]"
           >
             <div
               class="text-[red] font-sans text-[2.5vh] flex items-center font-medium rounded-tr-sm bg-whitesmoke shadow-xl md:w-[11vw] pl-2 md:h-[5.2vh]"
@@ -792,10 +797,10 @@
 
         e.name === "menu"
           ? ((e.name = "close"),
-            list.classList.add("top-[65px]"),
+            list.classList.add("top-[80px]"),
             list.classList.add("opacity-100"))
           : ((e.name = "menu"),
-            list.classList.remove("top-[65px]"),
+            list.classList.remove("top-[80px]"),
             list.classList.remove("opacity-100"));
       }
     </script>
