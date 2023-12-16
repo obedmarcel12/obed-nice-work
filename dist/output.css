@@ -1288,6 +1288,18 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\] {
+  color: ;
+}
+
+.text-\[3VH\] {
+  color: 3VH;
+}
+
+.text-\[3\] {
+  color: 3;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1520,6 +1532,10 @@ video {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:justify-between {
